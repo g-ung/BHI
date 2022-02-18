@@ -25,7 +25,7 @@ from os.path import abspath
 print("This script will download an image file from URL list in urls.txt \nlocated in current directory",
       os.getcwd(), "and save it in a folder of your choice")
 
-mydir = Path(input(" \nEnter save location (e.g. /tmp/downloads or C:\Temp\Downloads): "))
+mydir = Path(input(" \nEnter save location (e.g. Linux/Mac OS: /tmp/downloads or Windows: C:\Temp\Downloads): "))
 
 if not (os.path.isdir(mydir)):
     os.makedirs(mydir)
