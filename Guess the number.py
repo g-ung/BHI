@@ -21,10 +21,10 @@ for guesses in range(1, 7):
     print("What is your guess?  You have {} guesses.".format(count))
     guess = int(input())
     if guess < secret_num:
-        print("Your guess is too low, try again.")
+        print("Your guess is too low.")
         count -= 1
     elif guess > secret_num:
-        print("Your guess is too high, try again.")
+        print("Your guess is too high.")
         count -= 1
     else:
         break # Guess is neither too high or low, therefore condition is correct guess
