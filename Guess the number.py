@@ -12,7 +12,7 @@ secret_num = random.randint(1, 20) # Generate random number between 1-20
 
 # Ask the user for their name
 name = str(input("What is your name?  "))
-print("Hi " + name + "!\n")
+print("Hi {}!\n".format(name))
 print("I am thinking of a number between 1 and 20.\n")
 
 # Ask player to guess the secret number, max guesses: 6
