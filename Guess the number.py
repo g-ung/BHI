@@ -16,13 +16,16 @@ print("Hi {}!\n".format(name))
 print("I am thinking of a number between 1 and 20.\n")
 
 # Ask player to guess the secret number, max guesses: 6
+count = 6
 for guesses in range(1, 7):
-    print("What is your guess?  You have 6 guesses.")
+    print("What is your guess?  You have {} guesses.".format(count))
     guess = int(input())
     if guess < secret_num:
         print("Your guess is too low, try again.")
+        count -= 1
     elif guess > secret_num:
         print("Your guess is too high, try again.")
+        count -= 1
     else:
         break # Guess is neither too high or low, therefore condition is correct guess
 
