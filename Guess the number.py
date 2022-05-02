@@ -6,9 +6,9 @@
 # Computer will generate random number between 1-20 and match your guess
 # Player vs. Computer
 
-import random
+from random import randint
 
-secret_num = random.randint(1, 20) # Generate random number between 1-20
+secret_num = randint(1, 20) # Generate random number between 1-20
 
 # Ask the user for their name
 name = str(input("What is your name?  "))
