@@ -30,6 +30,6 @@ for guesses in range(1, 7):
         break # Guess is neither too high or low, therefore condition is correct guess
 
 if guess == secret_num:
-    print("Congratulations, you got it right! {} was the secret number. You guessed the number in {} guesses!".format(secret_num, guesses))
+    print("Congratulations, you got it right! {} was the secret number. You guessed the number in {} guess(es)!".format(secret_num, guesses))
 else:
     print("You lose, the number was {}. Thank you for playing the Guess the Number Game.".format(secret_num))
