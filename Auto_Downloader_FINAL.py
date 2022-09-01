@@ -40,8 +40,8 @@ path = os.path.abspath(mydir)
 # print(file_to_open.read_text())
 # read = file_to_open.read_text()
 
-links = open('urls.txt', 'r')
-for link in links:
+with open('urls.txt', 'r') as f:
+for link in f:
 
     # Get one line of text (e.g. http://server/files/grades.doc),
     # then get the filename from the end of the URL
@@ -58,7 +58,7 @@ for link in links:
             print("File size was", os.path.getsize(filename))
         except Exception as inst:
             print(inst)
-            print('  Encountered unknown error. Continuing.')
+            print("  Encountered unknown error. Continuing.")
 
     # File exists; don't download
     else:
@@ -75,5 +75,4 @@ if(mydir.resolve() != pathlib.Path.cwd()):
 # os.chdir(mydir)
 # print(os.listdir())
 # print(os.getcwd())
-links.close()
 print("\nFinished downloading.")
